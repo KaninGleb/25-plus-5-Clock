@@ -79,6 +79,7 @@ export const Clock = () => {
               return sessionLength * 60
             }
           }
+
           if (prev === 1) {
             if (audioRef.current) {
               audioRef.current.play()
