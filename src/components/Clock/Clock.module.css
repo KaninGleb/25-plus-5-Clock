@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.pomodoroClock {
+    font-family: 'Montserrat', sans-serif;
+    width: 550px;
+    margin: 2rem auto;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    user-select: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ff9900;
+    text-align: center;
+}
+
+.lengthControls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 20px;
+
+    div[id='break-label'] {
+        margin-bottom: 10px;
+    }
+
+    span {
+        margin: 0 10px;
+    }
+}
+
+.breakControl,
+.sessionControl {
+    font-size: 20px;
+    background-color: #333;
+    padding: 20px 25px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#break-label,
+#session-label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #ff9900;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0 5px 0 #222, 0 5px 10px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    color: white;
+    background-color: #333;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #3a3a3a;
+}
+
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #222, 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+button:active::after {
+    opacity: 1;
+}
+
+span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff9900;
+    min-width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.timer {
+    font-size: 30px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 15px;
+    padding: 25px 0;
+    margin-bottom: 2rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    user-select: none;
+
+    div[id='time-left'] {
+        font-size: 80px;
+    }
+}
+
+#timer-label {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ff9900;
+    letter-spacing: 1.5px;
+}
+
+#time-left {
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    user-select: none;
+}
+
+.timerControls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+        width: 120px;
+    }
+}
+
+#start_stop,
+#reset {
+    background-color: #ff9900;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 0 #b26a00, 0 5px 15px rgba(178, 106, 0, 0.5);
+    transition: background-color 0.2s ease;
+    user-select: none;
+}
+
+#start_stop:hover,
+#reset:hover {
+    background-color: #ffaa33;
+}
+
+#start_stop:active,
+#reset:active {
+    background-color: #e68a00;
+    transform: translateY(5px);
+    box-shadow: 0 2px 0 #b26a00, 0 2px 8px rgba(178, 106, 0, 0.5);
+}
+
+@media (max-width: 450px) {
+    .pomodoroClock {
+        width: 90vw;
+        padding: 20px;
+    }
+
+    .lengthControls {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .breakControl,
+    .sessionControl {
+        width: 100%;
+    }
+
+    #start_stop,
+    #reset {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+}
