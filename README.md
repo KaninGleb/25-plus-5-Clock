@@ -1,12 +1,38 @@
-# React + Vite
+# :sparkles:Pomodoro Clock:sparkles:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :scroll:Description
 
-Currently, two official plugins are available:
+**Pomodoro Clock**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔗 [Link to certification](https://github.com/KaninGleb/FreeCodeCamp-Certification)
 
-## Expanding the ESLint configuration
+## :camera_flash:Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![App in action](https://github.com/KaninGleb/FreeCodeCamp-Certification/blob/main/assets/screenshots/03-Front-End-Development-Libraries/04-Calculator/Calculator-FullHD.png)
+
+## :dart:Features
+
+
+## :hammer_and_wrench:Technologies Used
+
+- HTML5, CSS3 Modules
+- JavaScript
+- React
+- React Custom Hooks
+- Prettier
+  
+## :rocket:How to Run
+
+1. Clone the repository
+2. Install dependencies
+```Bash
+pnpm install
+```
+3. Start the app
+```
+pnpm run dev
+```
+
+---
+
+I appreciate your stars :star: and feedback!
